@@ -1,0 +1,44 @@
+# Binaries
+bin/
+tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Environment files
+.env.local
+.env.*.local
+.env
+
+# Build output
+static/css/output.css
+
+# Templ generated files (optional - some prefer to commit these)
+# *_templ.go
+
+# Air logs
+build-errors.log
