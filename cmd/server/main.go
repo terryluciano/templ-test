@@ -9,7 +9,7 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/terryluciano/templ-test/internal/config"
 	"github.com/terryluciano/templ-test/internal/database"
-	"github.com/terryluciano/templ-test/internal/handlers"
+	"github.com/terryluciano/templ-test/internal/handler"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
 	// In the future I want to try chi's http rate limiter lib "https://github.com/go-chi/httprate"
 
-	r.Get("/", handlers.HomeHandler)
+	r.Get("/", handler.HomeHandler)
 
 	port := fmt.Sprintf(":%s", config.Config.SERVER_PORT)
 
