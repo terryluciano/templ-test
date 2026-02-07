@@ -11,7 +11,7 @@ import (
 func HandleAuthSignup(w http.ResponseWriter, r *http.Request) {
 	var input validation.SignupSchema
 
-	if err := decodeJSON(r, &input); err != nil {
+	if err := decodeJSON(w, r, &input); err != nil {
 		respondError(w, http.StatusBadRequest, "invalid json")
 		return
 	}
